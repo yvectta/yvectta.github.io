@@ -1,7 +1,5 @@
 ---
 title: "index"
-author: "Zhengyong Chen"
-date: "2024-10-17"
 output: 
   html_document:
     toc: true
@@ -14,7 +12,7 @@ output:
 
 Sometimes I use [google](https://www.google.com/)
 
-![](https://en.ac-illust.com/clip-art/24553903/hello-hello”)
+![](https://i.etsystatic.com/29488153/r/il/e0f22b/3860244894/il_1588xN.3860244894_p9az.jpg)
 
 If you'd like to learn more about this website, visit [this page](about.html)
 
