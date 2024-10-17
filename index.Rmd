@@ -1,0 +1,20 @@
+---
+title: "index"
+author: "Zhengyong Chen"
+date: "2024-10-17"
+output: 
+  html_document:
+    toc: true
+    toc_floot: true
+    theme: cosmo
+  
+---
+
+# Info about this website
+
+Sometimes I use [google](https://www.google.com/)
+
+![](https://en.ac-illust.com/clip-art/24553903/hello-hello”)
+
+If you'd like to learn more about this website, visit [this page](about.html)
+
