@@ -1,5 +1,5 @@
 ---
-title: "index"
+title: "Zhengyong Chen"
 output: 
   html_document:
     toc: true
@@ -7,12 +7,17 @@ output:
     theme: cosmo
   
 ---
+```{r, echo=FALSE, fig.align="center", out.width="50%"}
+knitr::include_graphics("photo.jpg")
+```
 
-# Info about this website
+<span style="font-size: 24px;">**About**</span>
 
-Sometimes I use [google](https://www.google.com/)
 
-![](https://i.etsystatic.com/29488153/r/il/e0f22b/3860244894/il_1588xN.3860244894_p9az.jpg)
 
-If you'd like to learn more about this website, visit [this page](about.html)
+
+
+
+If you'd like to learn more about my experience, visit [this page](experience.html).\
+If you'd like to see some plots, visit [this page](experience.html).
 
