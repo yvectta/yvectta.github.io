@@ -3,9 +3,9 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
-      href: about.html
-    - text: "Plotly"
+    - text: "Experience"
+      href: experience.html
+    - text: "Dashboard"
       href: plots.html
     - icon: fa-envelope fa-lg
       href: mailto:<zc2822@cumc.columbia.edu>
