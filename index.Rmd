@@ -13,11 +13,9 @@ knitr::include_graphics("photo.jpg")
 
 <span style="font-size: 24px;">**About**</span>
 
+I am currently pursuing an MS in Biostatistics at the [Columbia University](https://www.columbia.edu/) Mailman School of Public Health, with a concentration in Theory and Methods. Prior to this, I earned a BS in Statistics from [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en) in 2024. I have worked on projects involving both medical and financial data, and I am eager to explore more medical-related topics in the future.
 
+If you'd like to learn more about my experience, visit [My experience](experience.html).
 
-
-
-
-If you'd like to learn more about my experience, visit [this page](experience.html).\
-If you'd like to see some plots, visit [this page](experience.html).
+If you'd like to see some plots created for my Data Science course, visit [Dashboard](dashboard.html).
 
