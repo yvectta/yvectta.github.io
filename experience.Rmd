@@ -8,6 +8,28 @@ output:
 
 ## Education
 
+**Columbia University** <span style="float: right;">September 2024 - May 2026</span> \
+*Master of Science* - Major: Biostatistics
+ 
+**The Chinese University of Hong Kong, Shenzhen** <span style="float: right;">September 2020 - June 2024</span> \
+*Bachelor of Science* - Major: Statistics \
+Relevant Courses: Calculus, Linear Algebra, Real Analysis, Probability, Generalized Linear Models, Statistical Computing, Statistical Inference, etc. \
+Honors/Awards: Dean’s List \
+
+
 ## Professional Experience
 
-## Project Experience
+**Shenzhen Research Institute of Big Data | Medical Big Data Lab** <span style="float: right;">June 2023 - Oct 2023</span>\
+Research Assistant Intern    
+Employed diffusion imaging methods and conducted statistical analysis on MRI data for investigating pathophysiological mechanisms in pediatric intermittent exotropia.
+
+**The Chinese University of Hong Kong, Shenzhen | School of Data Science** <span style="float: right;">May 2022 - September 2022</span>\
+Research Assistant                                                                      
+Investigated the impact of labor shortage on firm dynamics in China.
+
+
+## Skills                                                                                         
+Languages: Chinese (Native), English (Fluent, IELTS 7.5)\
+Computer Skills: Python, R, SAS, MATLAB, Stata, Excel
+
+
