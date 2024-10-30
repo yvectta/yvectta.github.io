@@ -1,0 +1,89 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+
+data("ny_noaa")
+```
+
+```{r}
+noaa_df = 
+  ny_noaa |> 
+  janitor::clean_names() |> 
+  separate(date, into = c("year", "month", "day"), sep = "-") |> 
+  mutate(year = as.factor(year),
+         month = as.factor(month),
+         tmax = as.numeric(tmax),
+         tmin = as.numeric(tmin),
+         snwd = as.numeric(snwd)
+         ) |> 
+  mutate(tmax = tmax / 10,
+         tmin = tmin / 10,
+         prcp = prcp / 10) 
+  
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+noaa_df |> 
+  filter(year == 2005) |> 
+  plot_ly(
+    x = ~month, y = ~tmin, color = ~month,
+    type = "box", colors = "viridis") |> 
+  layout(title = "Boxplot of Minimum Temperature (C) by Month in 2005",
+         xaxis = list(title = "Year"),
+         yaxis = list(title = "Minimum Temperature (C)"))
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+noaa_df |> 
+  filter(month == "01") |> 
+  group_by(year) |> 
+  summarize(avg_snwd = mean(snwd, na.rm = TRUE)) |> 
+  plot_ly(x = ~year, y = ~avg_snwd, color = ~year,
+          type = 'bar', colors = "viridis")  |> 
+  layout(
+    title = "Average Snow Width in January by Year",
+    xaxis = list(title = "Year"),
+    yaxis = list(title = "Average Snow Width (mm)")
+  )
+```
+
+### Chart C
+
+```{r}
+noaa_df |> 
+  group_by(year, month) |> 
+  summarize(
+    avg_tmax = mean(tmax, na.rm = TRUE),
+    avg_tmin = mean(tmin, na.rm = TRUE)
+  ) |> 
+  plot_ly(x = ~avg_tmin, y = ~avg_tmax, color = ~factor(month),
+        type = "scatter", mode = 'markers', colors = "viridis")  |> 
+  layout(
+    title = "Monthly Average Max vs. Min Temperature by Year",
+    xaxis = list(title = "Average Minimum Temperature (C)"),
+    yaxis = list(title = "Average Maximum Temperature (C)"),
+    coloraxis = list(colorbar = list(title = "Year"))
+  )
+```
+
